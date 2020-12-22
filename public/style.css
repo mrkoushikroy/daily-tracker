@@ -1,0 +1,81 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial;
+  background-color: #F7FAFC;
+}
+
+button,
+input {
+  font-size: 1em;
+  font-family: Arial;
+}
+
+label {
+  font-weight: 900;
+}
+
+input {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: .4em .8em;
+  background-color: #ffffff;
+}
+
+input:focus {
+  background-color: #2e84e6;
+  border: 2px solid #07f070;
+  outline: 0;
+}
+
+
+button:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+table {
+  width: 100%;
+}
+
+.error {
+  color: red;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.total {
+  font-size: 150%;
+}
+
+form {
+  margin-top: 25px;
+}
+.vl {
+  border-left: 4px solid hsl(192deg 47% 49%);
+  height: 750px;
+}
+
+.transactions {
+  text-align: left;
+  max-height: 300px;
+  overflow: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.transaction-buttons {
+  margin-top: 25px;
+}
+@media only screen and (max-width: 900px) {
+  .vl{
+    display: none;
+  }
+}
