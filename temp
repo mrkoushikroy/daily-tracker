@@ -1,81 +1,15 @@
-# Define log file path
-$logFile = "C:/Scripts/appium_log.txt"
+Here’s a refined version of your points for self-review:
 
-# Write a log entry for script start
-Start-Transcript -Path $logFile -Append
+1. Led multiple teams across various projects, ensuring effective collaboration and timely delivery.
+2. Developed detailed project plans and ensured their successful execution, maintaining system stability.
+3. Oversaw the development and maintenance of 14+ applications in the Metropolis project.
+4. Managed 9+ applications under the Persona project, ensuring alignment with objectives.
+5. Restored and maintained system stability for both the Metropolis and Persona platforms.
+6. Earned increased customer confidence through successful sprint planning, leading to greater responsibilities.
+7. Contributed individually to one application, focusing on automation and enhancing system stability.
+8. Demonstrated strong leadership and strategic planning throughout projects.
+9. Led initiatives for new implementations on Telstra and iTest Classifier, exploring innovative solutions.
+10. Completed ISTQB training to enhance testing knowledge and capabilities.
+11. Fostered effective team collaboration, ensuring timely delivery of project milestones.
 
-# Step 1: Open PowerShell with admin privileges and kill Appium process
-try {
-    Write-Output "[$(Get-Date)] Attempting to kill Appium process..." | Out-File -FilePath $logFile -Append
-    Start-Process powershell -Verb RunAs -ArgumentList '-Command "taskkill /IM appium.exe /F; exit"'
-    Write-Output "[$(Get-Date)] Appium process killed." | Out-File -FilePath $logFile -Append
-}
-catch {
-    Write-Output "[$(Get-Date)] Error killing Appium process: $_" | Out-File -FilePath $logFile -Append
-}
-
-# Wait for the task to complete
-Start-Sleep -Seconds 5
-
-# Step 2: Open a new PowerShell instance in normal mode and change directory to "C:/abc"
-try {
-    Write-Output "[$(Get-Date)] Starting Appium in 'C:/abc'..." | Out-File -FilePath $logFile -Append
-    Start-Process powershell -NoExit -ArgumentList '-Command "cd C:/abc; ./appium.exe"'
-    Write-Output "[$(Get-Date)] Appium started successfully." | Out-File -FilePath $logFile -Append
-}
-catch {
-    Write-Output "[$(Get-Date)] Error starting Appium: $_" | Out-File -FilePath $logFile -Append
-}
-
-# End log for this run
-Stop-Transcript
-
-
-
-
-To schedule this script to run at a specific time every day using the Windows Task Scheduler, follow these steps:
-
-### Steps:
-
-1. **Save the PowerShell Script**:
-   - Save the script you created as `script.ps1` in a known location, for example, `C:\Scripts\script.ps1`.
-
-2. **Open Task Scheduler**:
-   - Press `Windows + R`, type `taskschd.msc`, and press `Enter` to open Task Scheduler.
-
-3. **Create a New Task**:
-   - In the Task Scheduler window, click on `Action` > `Create Task`.
-
-4. **General Tab**:
-   - Give the task a name (e.g., "Run Appium Script").
-   - Choose "Run whether user is logged on or not."
-   - Check the box for "Run with highest privileges" to ensure it has the required permissions.
-
-5. **Triggers Tab**:
-   - Click `New` to create a new trigger.
-   - Set "Begin the task" to "On a schedule."
-   - Set the time and recurrence pattern (e.g., daily at 9:00 AM).
-   - Click `OK`.
-
-6. **Actions Tab**:
-   - Click `New` to create a new action.
-   - Set "Action" to `Start a program`.
-   - In the "Program/script" field, enter `powershell.exe`.
-   - In the "Add arguments (optional)" field, enter the following:
-     ```powershell
-     -File "C:\Scripts\script.ps1"
-     ```
-   - Click `OK`.
-
-7. **Conditions Tab** (Optional):
-   - If you want the task to run only if the computer is idle or on AC power, configure these settings here.
-
-8. **Settings Tab**:
-   - Check "Allow task to be run on demand."
-   - You can configure the task to restart if it fails, or stop the task if it runs too long.
-
-9. **Finish and Enter Password**:
-   - Click `OK` to save the task.
-   - If prompted, enter your password to allow the task to run with elevated privileges.
-
-### Now, your PowerShell script will run every day at the specified time!
+This version emphasizes leadership, responsibility, and outcomes. Let me know if you'd like further adjustments!
