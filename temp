@@ -1,15 +1,21 @@
-Case Study: Effect of Persona Recording Sharing on Automation Team Involvement in Dev Scrum
- 
-•1. Better Understanding of Sprint Planning
-•   - Enables the automation team to grasp task priorities and timelines through access to recorded discussions.
- 
-•2. Always Up-to-Date with Active Development
-•   - Provides real-time updates on development tasks and helps the automation team stay aligned with the dev side.
- 
-Case Study: Further Enhancements in Automation Team Involvement
- 
-•3. Early Awareness of Changes Before Rollout
-•   - The automation team gets preemptive knowledge of upcoming feature implementations, ensuring automation scripts are prepared ahead of time.
- 
-•4. Clarification on Discussion Outcomes
-•   - Revisit discussions to understand decisions, providing better insights and improving
+Initial Challenges with Scrum Clarity
+•• Our automation team was facing difficulties in keeping up with development progress.
+•• Discussions were often missed or misunderstood, causing confusion.
+•• There was a gap in collaboration between teams, leading to delays in task alignment.
+Introducing Persona Recording Sharing
+•• To address these challenges, we implemented a persona recording sharing process.
+•• This allowed us to revisit recorded discussions and gain better insights.
+•• Recordings were shared across teams, enhancing collaboration and communication.
+Loading…
+How Recording Sharing Improved Scrum Clarity
+•• Better Sprint Planning: Enabled better task prioritization through access to recorded discussions.
+•• Real-Time Updates: Automation team remained up-to-date with development tasks.
+•• Early Awareness of Changes: Preemptive knowledge of feature implementations.
+•• Clarified Discussion Outcomes: Revisited recordings to understand decisions and reduce misunderstandings.
+•• Improved Transparency: Acted as a bridge for better communication, reducing rework.
+Results: Improved Collaboration
+
+Recording sharing bridged the gap between the automation and development teams.
+• Enhanced clarity led to smoother rollouts and timely script preparation.
+• Significant reduction in rework and misunderstandings.
+• Overall, the process fostered a more transparent and collaborative environment.
