@@ -1,58 +1,114 @@
-Initial Challenges with Scrum Clarity
-•• Our automation team was facing difficulties in keeping up with development progress.
-•• Discussions were often missed or misunderstood, causing confusion.
-•• There was a gap in collaboration between teams, leading to delays in task alignment.
-Introducing Persona Recording Sharing
-•• To address these challenges, we implemented a persona recording sharing process.
-•• This allowed us to revisit recorded discussions and gain better insights.
-•• Recordings were shared across teams, enhancing collaboration and communication.
-Loading…
-How Recording Sharing Improved Scrum Clarity
-•• Better Sprint Planning: Enabled better task prioritization through access to recorded discussions.
-•• Real-Time Updates: Automation team remained up-to-date with development tasks.
-•• Early Awareness of Changes: Preemptive knowledge of feature implementations.
-•• Clarified Discussion Outcomes: Revisited recordings to understand decisions and reduce misunderstandings.
-•• Improved Transparency: Acted as a bridge for better communication, reducing rework.
-Results: Improved Collaboration
+To set up Kafka on a Windows machine and implement a producer and consumer with message queueing in Python, follow these steps:
 
-Recording sharing bridged the gap between the automation and development teams.
-• Enhanced clarity led to smoother rollouts and timely script preparation.
-• Significant reduction in rework and misunderstandings.
-• Overall, the process fostered a more transparent and collaborative environment.
+Step 1: Download and Install Kafka
+
+	1.	Download Kafka:
+	•	Go to the official Apache Kafka website: Kafka Downloads.
+	•	Download the latest Kafka binary (kafka_2.x.x-x.x.x.tgz) for your operating system.
+	2.	Extract Kafka:
+	•	Extract the tar file to a location of your choice.
+	3.	Install Java:
+	•	Kafka requires Java, so ensure you have the latest Java version installed.
+	•	You can download it from Java Downloads.
+	•	After installing Java, set the JAVA_HOME environment variable.
+	4.	Start Zookeeper:
+	•	Kafka uses Zookeeper for managing brokers. To start Zookeeper, navigate to the Kafka directory and run:
+
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
 
+	5.	Start Kafka Server:
+	•	Open another terminal window and run:
 
-
+.\bin\windows\kafka-server-start.bat .\config\server.properties
 
 
 
-Here’s a more concise and professional version of the points that doesn’t emphasize the previous lack of process:
+Step 2: Install Kafka-Python Package
 
-Initial Challenges with Scrum Clarity
+You need the kafka-python package to interact with Kafka through Python. Install it via pip:
 
-	•	Difficulty in aligning with evolving development tasks.
-	•	Miscommunication across teams, affecting collaboration.
-	•	Delays in task coordination due to scattered information.
+pip install kafka-python
 
-Introducing Persona Recording Sharing
+Step 3: Create Kafka Topics
 
-	•	Implemented a structured process for recording and sharing key discussions.
-	•	Enabled teams to revisit decisions for improved clarity.
-	•	Enhanced cross-team communication with shared access to recordings.
+Kafka stores messages in topics. You need to create a topic for producers to send messages and consumers to read from.
 
-How Recording Sharing Improved Scrum Clarity
+.\bin\windows\kafka-topics.bat --create --topic test-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 
-	•	Optimized Sprint Planning: Clearer priorities with recorded discussions.
-	•	Real-Time Updates: Teams aligned with the latest developments.
-	•	Proactive Change Awareness: Early insight into feature rollouts.
-	•	Informed Decision Making: Revisited discussions led to better understanding.
-	•	Increased Transparency: Strengthened collaboration, minimizing rework.
+You can list the created topics with:
 
-Results: Improved Collaboration
+.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 
-	•	Seamless collaboration between automation and development teams.
-	•	Smoother implementation cycles and timely script preparation.
-	•	Reduced misunderstandings and enhanced efficiency.
-	•	Fostered a transparent and cohesive working environment.
+Step 4: Write Python Code for Kafka Producer and Consumer
 
-This version focuses more on the positive impact of the changes rather than emphasizing any previous challenges. Let me know if you need further modifications!
+Here’s the code for a simple Kafka producer and consumer in Python.
+
+Producer (Python Code)
+
+from kafka import KafkaProducer
+import json
+import time
+
+# Function to produce messages to Kafka topic
+def produce_messages():
+    producer = KafkaProducer(
+        bootstrap_servers=['localhost:9092'],
+        value_serializer=lambda x: json.dumps(x).encode('utf-8')  # Serialize data as JSON
+    )
+    
+    for i in range(10):  # Send 10 messages
+        message = {'number': i}
+        producer.send('test-topic', value=message)
+        print(f"Sent message: {message}")
+        time.sleep(1)  # Sleep for a second before sending the next message
+    
+    producer.flush()  # Ensure all messages are sent
+    producer.close()
+
+if __name__ == "__main__":
+    produce_messages()
+
+Consumer (Python Code)
+
+from kafka import KafkaConsumer
+import json
+
+# Function to consume messages from Kafka topic
+def consume_messages():
+    consumer = KafkaConsumer(
+        'test-topic',  # Topic name
+        bootstrap_servers=['localhost:9092'],
+        auto_offset_reset='earliest',  # Start from the earliest message
+        enable_auto_commit=True,  # Commit messages once consumed
+        group_id='consumer-group-1',
+        value_serializer=lambda x: json.dumps(x).encode('utf-8'),
+        value_deserializer=lambda x: json.loads(x.decode('utf-8'))  # Deserialize data from JSON
+    )
+    
+    for message in consumer:
+        print(f"Consumed message: {message.value}")
+
+if __name__ == "__main__":
+    consume_messages()
+
+Step 5: Run the Producer and Consumer
+
+	1.	Run the Producer:
+	•	Open a terminal window and run the producer script. It will send messages to the test-topic.
+
+python producer.py
+
+
+	2.	Run the Consumer:
+	•	Open another terminal window and run the consumer script. It will consume and display the messages from test-topic.
+
+python consumer.py
+
+
+
+Step 6: Check Kafka Logs and Topics
+
+	•	You can check the Kafka logs to ensure everything is working as expected. The logs are typically found in the logs/ directory within the Kafka installation folder.
+
+This setup should help you run Kafka on a Windows machine and use Python to interact with it as both a producer and a consumer. Let me know if you run into any issues during the setup!
