@@ -99,7 +99,7 @@ To create the test-topic used by the producer and consumer, use the following co
 
 .\bin\windows\kafka-topics.bat --create --topic test-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 
-
+.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test-topic
 
 8. Testing the Setup
 
