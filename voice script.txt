@@ -1,0 +1,10 @@
+Introduction
+QA process has evolved significantly over time.
+"Testing software used to be a time-consuming manual task—painstaking and error-prone."
+"Then came automation, revolutionizing testing with speed and efficiency. But as systems grow more complex, traditional automation struggles to keep up."
+"Introducing iScripter—the intelligent generative tool that takes software testing to the next level."
+
+
+
+
+"iScripter automatically refactors legacy code, improving performance and eliminating inefficiencies."
