@@ -8,3 +8,5 @@ QA process has evolved significantly over time.
 
 
 "iScripter automatically refactors legacy code, improving performance and eliminating inefficiencies."
+
+"Say goodbye to outdated or broken test scripts. iScripter intelligently maintains your testing framework, ensuring it evolves with your application."
