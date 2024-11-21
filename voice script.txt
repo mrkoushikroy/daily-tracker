@@ -10,3 +10,15 @@ QA process has evolved significantly over time.
 "iScripter automatically refactors legacy code, improving performance and eliminating inefficiencies."
 
 "Say goodbye to outdated or broken test scripts. iScripter intelligently maintains your testing framework, ensuring it evolves with your application."
+
+
+
+
+
+Scripter is your intelligent partner for smarter repository management, seamless script generation, and streamlined QA workflows. Experience the power of efficiency, accuracy, and innovation – all at your fingertips.”
+
+[Text on Screen: Key Benefits]
+
+Optimize Repository Quality: Code refactoring, efficiency improvements, and seamless upgrades.
+Automate Script Management: Test case mapping, script updates, and comprehensive reports.
+Streamline QA Processes: Automation of repetitive tasks, requirement updates, and validations.
