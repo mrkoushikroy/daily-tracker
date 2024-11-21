@@ -70,7 +70,35 @@ Narrator Voiceover: "Finally, the Analytics Layer transforms all this data into 
 
 
 
+Narrator: "Our architecture begins with the User Interaction Layer, the entry point where developers and testers interact with the system. Here, we use modern front-end technologies like React.js, Angular, or Vue.js to create an intuitive interface. This layer enables users to submit their repositories or test cases effortlessly."
 
+[Key visual elements: Developer submitting a GitHub link via the interface.]
+
+[Scene 2: Spotlight on the ‘Application Layer’]
+
+Narrator: "The Application Layer is the backbone of our system. This layer manages the logic and workflows. It uses technologies like Node.js, Python Flask, or Spring Boot, enabling secure data processing and communication. Here, the GitHub and qTest training steps are initiated."
+
+[Key visual elements: GitHub and qTest training boxes lighting up, data processing begins.]
+
+Narrator: "In the GitHub Training Step, we extract repository metadata, identify automation scripts, and analyze code quality. Simultaneously, in the qTest Training Step, we map test steps to scripts, identify missing coverage, and create new test cases."
+
+[Scene 3: Spotlight on the ‘Integration Layer’]
+
+Narrator: "Next is the Integration Layer, which seamlessly connects the Application Layer with the Data Layer. Technologies like GraphQL, REST APIs, and message brokers such as RabbitMQ or Kafka ensure efficient data transfer."
+
+[Key visual elements: Clear arrows showing data flowing from Application Layer to Data Layer.]
+
+[Scene 4: Spotlight on the ‘AI/ML Engine’ within the Data Layer]
+
+Narrator: "The heart of the system lies in the AI/ML Engine within the Data Layer. Using frameworks like TensorFlow, PyTorch, and scikit-learn, this engine processes input data and provides actionable insights. It maps test steps to scripts, detects missing coverage, and even generates new test cases automatically."
+
+[Key visual elements: AI processing visuals, auto-generation of test cases.]
+
+Narrator: "This layer ensures a continuous feedback loop, improving test coverage and identifying automation opportunities."
+
+[Scene 5: Spotlight on the ‘Analytics Layer’]
+
+Narrator: "Finally, the Analytics Layer provides actionable insights. With tools like Tableau, Power BI, or custom dashboards powered by D3.js, users can visualize key metrics like code quality, automation coverage, and overall testing efficiency."
 
 
 
