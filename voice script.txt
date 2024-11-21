@@ -30,6 +30,10 @@ Say goodbye to repetitive QA processes. iScripter automates tasks like requireme
 Narrator Voiceover: “Our automation ensures consistency and accuracy, letting your team focus on delivering quality software faster.”
 
 
+
+Traditional testing is time-consuming and error-prone, slowing down deployment. iScripter replaces 60% of manual effort with intelligent automation, ensuring faster processes, error-free testing, and significant cost savings. With iScripter, software development becomes seamless and scalable.
+
+
 Architecture
 --------------
 
