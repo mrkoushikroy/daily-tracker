@@ -30,6 +30,46 @@ Say goodbye to repetitive QA processes. iScripter automates tasks like requireme
 Narrator Voiceover: “Our automation ensures consistency and accuracy, letting your team focus on delivering quality software faster.”
 
 
+Architecture
+--------------
+
+[Scene 1: User Interaction Layer highlighted, with a user interacting with the system.]
+
+Narrator Voiceover: "It all starts with the User Interaction Layer – a simple and intuitive interface where developers and testers can initiate repository scans, define test requirements, and access actionable insights. Built with modern technologies like React or Angular, this layer ensures seamless communication between users and the system."
+
+[Scene 2: Application Layer highlighted, orchestrating tasks across modules.]
+
+Narrator Voiceover: "Behind the scenes, the Application Layer acts as the central hub, orchestrating workflows between different modules. Powered by robust backend frameworks like Node.js or Django, it coordinates between repository and test management systems, ensuring all operations are smooth and efficient."
+
+[Scene 3: GitHub Training Step shown analyzing a repository.]
+
+Narrator Voiceover: "Next, we have the GitHub Training Step. Here, iScripter extracts repository metadata, identifies existing automation scripts, and evaluates code quality using tools like SonarQube. It highlights inefficiencies, flags deprecated elements, and provides optimization recommendations – ensuring your repository is always clean and efficient."
+
+[Scene 4: qTest Training Step shown linking test cases to scripts.]
+
+Narrator Voiceover: "On the testing side, the qTest Training Step bridges the gap between repositories and test management tools. It maps test steps to automation scripts, identifies missing test cases, and even generates new ones. By integrating with tools like qTest or TestRail, iScripter guarantees comprehensive test coverage."
+
+[Scene 5: AI/ML Engine glowing as data flows through it.]
+
+Narrator Voiceover: "The real intelligence lies in the AI/ML Engine. Using advanced machine learning frameworks like TensorFlow or PyTorch, it analyzes repository data, test cases, and coverage gaps. It generates optimized solutions, identifies patterns, and continuously improves test coverage and repository quality."
+
+[Scene 6: Data Layer visualized as a pipeline storing and managing information.]
+
+Narrator Voiceover: "All this data flows into the Data Layer – a secure and scalable storage system powered by databases like PostgreSQL or MongoDB. It not only manages historical data but also feeds the AI/ML Engine to enable continuous learning and smarter recommendations."
+
+[Scene 7: Analytics Layer displaying dynamic charts and reports.]
+
+Narrator Voiceover: "Finally, the Analytics Layer transforms all this data into actionable insights. Through intuitive dashboards built with tools like Power BI or Tableau, iScripter delivers detailed reports on code quality, test coverage, and optimization metrics – empowering your team to make data-driven decisions."
+
+
+
+
+
+
+
+
+
+
 
 
 
