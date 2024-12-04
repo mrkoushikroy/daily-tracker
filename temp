@@ -111,4 +111,25 @@ Step 6: Check Kafka Logs and Topics
 
 	•	You can check the Kafka logs to ensure everything is working as expected. The logs are typically found in the logs/ directory within the Kafka installation folder.
 
+
+
+
+
+
+function prepareFilters(filterObj) {
+  const filters = [];
+
+  // Use Object.entries to get key-value pairs
+  Object.entries(filterObj).forEach(([key, value]) => {
+    filters.push(key);    // Push the key
+    filters.push(value);  // Push the value
+  });
+
+  return filters;
+}
+
+
+
+
+
 This setup should help you run Kafka on a Windows machine and use Python to interact with it as both a producer and a consumer. Let me know if you run into any issues during the setup!
