@@ -1,3 +1,31 @@
+from selenium import webdriver
+from selenium.webdriver.edge.service import Service
+from selenium.webdriver.edge.options import Options
+
+# Set the EdgeDriver options
+edge_options = Options()
+edge_options.add_argument('--remote-debugging-port=9222')  # Specify the port
+
+# Specify the path to the Edge WebDriver
+webdriver_path = "path/to/msedgedriver"
+
+# Set up the WebDriver with the port and options
+service = Service(webdriver_path)
+driver = webdriver.Edge(service=service, options=edge_options)
+
+# Navigate to a webpage
+driver.get("https://example.com")
+
+# Execute a script
+result = driver.execute_script("return document.title;")
+print(f"Page Title: {result}")
+
+# Close the driver
+driver.quit()
+
+
+
+
 To set up Kafka on a Windows machine and implement a producer and consumer with message queueing in Python, follow these steps:
 
 Step 1: Download and Install Kafka
